@@ -1,0 +1,115 @@
+/**
+ * JavaScript version of config.py for use in Node.js
+ */
+
+// Verification token for Facebook webhook
+const VERIFY_TOKEN = "VERIFY_TOKEN";
+
+// All page configurations are now stored in the database
+// No hardcoded configurations - everything is dynamic
+
+// Helper functions - these should now use database-driven configurations
+// All functions return null to force database lookup
+
+/**
+ * Get page configuration from database
+ * @param {string} pageId The page ID
+ * @returns {object|null} Returns null to force database lookup
+ */
+function get_page_config(pageId) {
+    // All configurations are now in database
+    return null;
+}
+
+/**
+ * Get the access token for a specific page from database
+ * @param {string} pageId The page ID
+ * @returns {string|null} Returns null to force database lookup
+ */
+function get_access_token(pageId) {
+    // All configurations are now in database
+    return null;
+}
+
+/**
+ * Get the assistant ID for a specific page from database
+ * @param {string} pageId The page ID
+ * @returns {string|null} Returns null to force database lookup
+ */
+function get_assistant_id(pageId) {
+    // All configurations are now in database
+    return null;
+}
+
+/**
+ * Get the greeting message for a specific page from database
+ * @param {string} pageId The page ID
+ * @returns {string|null} Returns null to force database lookup
+ */
+function get_greeting_message(pageId) {
+    // All configurations are now in database
+    return null;
+}
+
+/**
+ * Get the first message for a specific page from database
+ * @param {string} pageId The page ID
+ * @returns {string|null} Returns null to force database lookup
+ */
+function get_first_message(pageId) {
+    // All configurations are now in database
+    return null;
+}
+
+/**
+ * Get the maximum number of messages for a specific page from database
+ * @param {string} pageId The page ID
+ * @returns {number|null} Returns null to force database lookup
+ */
+function get_max_messages(pageId) {
+    // All configurations are now in database
+    return null;
+}
+
+/**
+ * Get the end message for a specific page from database
+ * @param {string} pageId The page ID
+ * @returns {string|null} Returns null to force database lookup
+ */
+function get_end_message(pageId) {
+    // All configurations are now in database
+    return null;
+}
+
+/**
+ * Get the stop message for a specific page from database
+ * @param {string} pageId The page ID
+ * @returns {string|null} Returns null to force database lookup
+ */
+function get_stop_message(pageId) {
+    // All configurations are now in database
+    return null;
+}
+
+/**
+ * Get the Facebook page ID associated with an Instagram account ID from database
+ * @param {string} instagramId The Instagram account ID
+ * @returns {string|null} Returns null to force database lookup
+ */
+function get_page_id_from_instagram_id(instagramId) {
+    // All configurations are now in database
+    return null;
+}
+
+export {
+    VERIFY_TOKEN,
+    get_page_config,
+    get_access_token,
+    get_assistant_id,
+    get_greeting_message,
+    get_first_message,
+    get_max_messages,
+    get_end_message,
+    get_stop_message,
+    get_page_id_from_instagram_id
+};

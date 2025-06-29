@@ -1,0 +1,141 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Virtual environments
+.env
+.env.*
+.venv
+env
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Redis dump
+dump.rdb
+
+# Backup files
+*.backup
+*.bak
+
+# Configuration files with sensitive data
+config.js
+config.py
+chatbot/config.js
+chatbot/config.py
+
+# Cache
+.cache/
+
+# Facebook/Instagram API tokens and sensitive data
+access_token*
+*token*
+*secret*
+*password*
+*key*
+*.pem
+*.p8
+secrets.json
+credentials.json
+
+# Conversation data and database files
+conversation_data.db
+chatbot/conversation_data.db
+
+# Performance and monitoring data
+performance_data/
+metrics_data/
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+
+# Node modules (if any JavaScript dependencies)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Redis cache
+redis-cache/
+
+# Additional sensitive patterns
+*_token.py
+*_credentials.py
+*_secrets.py

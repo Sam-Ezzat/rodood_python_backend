@@ -1,0 +1,70 @@
+import os
+
+INSTAGRAM_APP_SECRET = "INSTAGRAM_APP_SECRET"
+INSTAGRAM_APP_ID = "INSTAGRAM_APP_ID"
+
+VERIFY_TOKEN = "VERIFY_TOKEN"
+
+# Use environment variable for API key
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
+
+# All page configurations are now stored in the database
+# No hardcoded configurations - everything is dynamic
+
+
+# Helper functions - these now redirect to dynamic_config module
+# All configurations are retrieved from the database
+def get_page_config(page_id):
+    """Deprecated: All configurations are now in database"""
+    from dynamic_config import fetch_dynamic_config
+    return fetch_dynamic_config(page_id)
+
+
+def get_access_token(page_id):
+    """Get access token from database"""
+    from dynamic_config import get_dynamic_access_token
+    return get_dynamic_access_token(page_id)
+
+
+def get_assistant_id(page_id):
+    """Get assistant ID from database"""
+    from dynamic_config import get_dynamic_assistant_id
+    return get_dynamic_assistant_id(page_id)
+
+
+def get_greeting_message(page_id):
+    """Get greeting message from database"""
+    from dynamic_config import get_dynamic_greeting_message
+    return get_dynamic_greeting_message(page_id)
+
+
+def get_first_message(page_id):
+    """Get first message from database"""
+    from dynamic_config import get_dynamic_first_message
+    return get_dynamic_first_message(page_id)
+
+
+def get_max_messages(page_id):
+    """Get max messages from database"""
+    from dynamic_config import get_dynamic_max_messages
+    return get_dynamic_max_messages(page_id)
+
+
+def get_end_message(page_id):
+    """Get end message from database"""
+    from dynamic_config import get_dynamic_end_message
+    return get_dynamic_end_message(page_id)
+
+
+def get_page_id_from_instagram_id(instagram_id):
+    """Get Facebook page ID from Instagram ID mapping in database"""
+    from dynamic_config import get_facebook_page_id_from_instagram_id
+    return get_facebook_page_id_from_instagram_id(instagram_id)
+
+
+def get_stop_message(page_id):
+    """Get stop message from database"""
+    from dynamic_config import get_dynamic_stop_message
+    return get_dynamic_stop_message(page_id)
+
+
